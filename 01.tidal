@@ -1,0 +1,12 @@
+Place your cursor in the following block and press control+enter
+
+d1 --a connection between Tidal and SuperDirt, we can also think d1 as the first channel inside SuperDirt
+$ --to explain how the dollar works consider this two are the same a $ b = a (b)
+sound -- sound is a special keywork that matches the isntrument/sample to be played
+"bd" -- this is the instrument/sample
+
+d1 $ sound "~ hh" -- sending another command to d1 will override the previous one, this is basic concept of livecoding
+
+d2 $ sound "bd" -- you can use d2 to hear the two patterns togheter
+
+To stop all the pattern you can press shift+control+h

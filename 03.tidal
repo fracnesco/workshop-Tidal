@@ -1,0 +1,23 @@
+We can use functions to do all sort of things
+
+d1 $ s "bd sn hh sn"
+
+d1 $ rev $ s "bd sn hh sn" -- plays the pattern backwards
+
+d1 $ fast 2 $ s "bd sn hh sn" -- speeds the pattern by a factor of 2
+
+d1 $ slow 4 $ s "bd sn hh sn"
+
+d1 $ ply 3 $ s "bd sn"
+
+Instead of writing a number as an argument, we can write a pattern
+
+d1 $ fast "2 0.5" $ s "bd sn hh sn" -- here the first half of the cycle is twice faster, the second half is half faster
+
+d1 $ ply "3 2" $ s "bd sn"
+
+We can also use functions to define when another function should happen
+
+d1
+$ every 2 (fast 2) -- speeds up the pattern every 2 repetitions
+$ s "bd sn hh sn"

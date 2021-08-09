@@ -1,0 +1,15 @@
+So we can nest functions inside tidal
+
+d1
+$ sometimesBy 0.2 (fast 2) -- applies the function 20% of the times
+$ s "bd(3,8) sn"
+
+d1
+$ superimpose (hurry 2) -- creates a copy of the pattern on top of the old one where the function is applied
+$ s "bd(3,8) sn"
+
+We can add more than one function using the following synthax
+
+d1
+$ superimpose ((hurry 2) . (degradeBy 0.5))
+$ s "bd(3,8) sn"

@@ -1,0 +1,20 @@
+We can use control functions to change how samples are playing in SuperDirt (or other software you are using to control Tidal).
+
+d1 $ s "bd*4" # gain "1.1 0.8 0.7 0.9"
+
+d1 $ s "sn" # speed (-1) -- changes the pitch
+
+d1 $ s "sn*3" # speed (range 0.25 0.5 $ rand)
+
+d1 $ s "bd*8" # pan "[0 1]*4"
+
+d1 $ s "bd(3,8) sn" # room "0 1" -- add fx such as reverb
+
+# lpf (range 200 15000 $ slow 8 $ tri) -- a simple low pass filter, uncomment next line to add resonance
+-- # lpq (range 0.3 0.1 $ slow 8 $ tri)
+
+Since each sample is a folder of sample you can select which sample from the folder to playn with a control function
+
+d1 $ s "hh*8" # n "0 1" -- use n to control which sample is played
+
+d1 $ s "hh*8" # n (irand 8) -- you can also randomize it

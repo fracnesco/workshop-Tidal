@@ -1,0 +1,31 @@
+Tidal squishes the event inside the duration of one cycle, so more events equal more density
+
+d1 $ s "bd"
+
+d1 $ s "bd sn hh"
+
+We can group events using square brackets
+
+d1 $ s "bd [bd sn]"
+
+d1 $ s "[bd [bd sn]] sn"
+
+d1 $ s "bd [bd [sn sn] sn] [ ~ bd]"
+
+The mini notation in tidal is quite flexible and has a lot of powerful shortcuts
+
+d1 $ s "bd [sn sn sn]"
+
+d1 $ s "bd sn*3" --Instead of writing down sn three times, we can simply write
+
+d1 $ s "[bd*3 sn*4 sn*5]/3" --In order to create a pattern longer than one cycle, we can divide it by a number
+
+d1 $ s "<bd cp> bottle" --If we want to play different samples every cycle, we enclose them in angle brackets
+
+d1 $ s "sn cp bd?" --It's possible to randomly remove events from patterns using the question mark. This corresponds to a 50% of probability of removing the event.
+
+d1 $ s "bd*16?"
+
+d1 $ s "bd(3,8)" -- Eucledian sequence
+
+d1 $ s "[bd*4|hh*12|cp*2]" -- use the pipe between brackets to choose between events with flat probability
