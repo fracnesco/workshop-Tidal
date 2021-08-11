@@ -1,0 +1,9 @@
+We can use continuos (or analog) patterns to control stuff inside tidal
+
+d1 $ s "bd(3,8)"
+# speed (range 0.75 2 $ slow 32 tri) -- control the speed with a triangle lfo
+
+d1 $ s "hh*32"
+# pan rand -- we can also use randomness
+# release (range 0.05 0.12 $ rand) -- we can define ranges to create tendecy masks
+# speed (range 0.8 2 $ perlin) -- there are various type of random

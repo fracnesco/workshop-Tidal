@@ -1,0 +1,21 @@
+We can use the let comand to save stuff inside of something and use it later
+
+let a = "ciao amici!" -- save something inside of a
+
+a -- evaluate this and check the console
+
+
+-- create some patterns to use later
+let kick = s "bd(3,11)"
+    snare = s "~ cp"
+    hat = s "hh*32" # release 0.1
+in -- the in keyword is used in combo with let
+d1
+$ every 4 (const $ fast "2 4 8 16" $ snare)
+$ stack [kick, snare, hat]
+
+let and in are indent sensitive
+
+let kick = stack [s "bd", "hh" # release 0.1] -- save some layered samples inside kick
+
+d1 $ struct "1(3,8)" $ kick -- use struct to play the layers

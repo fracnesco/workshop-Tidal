@@ -1,0 +1,18 @@
+We can play multiple patterns at the same time using the stack function
+
+d1 $ stack [
+s "bd ~ bd bd",
+sometimesBy 0.3 (# speed (-0.5)) $ s "~ cp",
+s "hh*16" # release 0.1
+]
+
+Now we can change the single patterns and the whole in the same block of code
+
+d1
+$ every 6 (scramble 8)
+$ every 4 ((degradeBy 0.5) . (ply 2))
+$ stack [
+sometimesBy 0.1 (linger (1/16)) $ s "bd ~ bd bd",
+sometimesBy 0.3 (# speed (-0.5)) $ s "~ cp",
+s "hh*16" # release 0.1
+]

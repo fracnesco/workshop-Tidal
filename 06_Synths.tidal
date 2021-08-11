@@ -6,7 +6,7 @@ $ n "c a f e" -- notes
 # legato 4 -- add legato effect
 
 d1
-$ plyWith 4 ((+ n 7) . (|* legato 0.25)) -- plywith let's you create super cool stutter effect
+$ plyWith 4 ((+ n 7) . (|* legato 0.25)) -- plywith let's you create super cool stutter effects
 $ n "c a f e" -- notes
 # sound "supermandolin" -- name of the synth
 # legato (range 1 6 $ slow 8 $ tri) -- control legato effect with an lfo
