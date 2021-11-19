@@ -1,6 +1,7 @@
 So we can nest functions inside tidal
 
 d1 $ every 2 (fast 2) $ s "bd(3,8) sn"
+
 d1
 $ sometimesBy 0.2 (fast 2) -- applies the function 20% of the times
 $ s "bd(3,8) sn"

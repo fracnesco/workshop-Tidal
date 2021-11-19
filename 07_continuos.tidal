@@ -5,5 +5,5 @@ d1 $ s "bd(3,8)"
 
 d1 $ s "hh*32"
 # pan rand -- we can also use randomness
-# release (range 0.05 0.12 $ rand) -- we can define ranges to create tendecy masks
+# release (range 0.05 0.12 $ rand) -- we can define ranges
 # speed (range 0.8 2 $ perlin) -- there are various type of random
